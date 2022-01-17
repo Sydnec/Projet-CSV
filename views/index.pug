@@ -1,0 +1,15 @@
+doctype html
+html 
+    head 
+        script(src="https://cdn.jsdelivr.net/npm/chart.js")
+        script(src="/script/chart.mjs.js")
+        style
+            include /css/style.css
+        title Fréquentation des musées
+    body
+        h1 Fréquentation des musées de France
+        select#Affichage(onChange="Redirect(this.value)")
+            option(value="year") Nombre d'entrées par an
+            option(value="museum") Nombre d'entrées par musée et par an
+        select#Musee(onChange="ChooseMuseum(this.value)")
+        canvas#chart(height="100")

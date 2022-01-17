@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: aliceblue;
+}
+select{
+    margin: 10px 0px;
+    height: 40px;
+    width: 90%;
+    text-align: center;
+    font-size: large;
+}
+#chart{
+    margin: 2%;
+}
